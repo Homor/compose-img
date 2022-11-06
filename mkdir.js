@@ -15,7 +15,16 @@ function mkdir(filePath) {
   for (let i = 1; i < arr.length; i++) {
     if (!dirCache[dir] && !fs.existsSync(dir)) {
       dirCache[dir] = true;
+      try {
       fs.mkdirSync(dir);
+        
+      } catch (error) {
+        console.log("error");
+        console.log(arr);
+        console.log('i',i);
+        console.log(dir);
+
+      }
       console.log('dir');
       console.log(dir);
     }

@@ -165,6 +165,8 @@ function save(file,output){
 }
 
 function compute(basePath, outPut, progress, finish){
+   const total = 18*7;
+
     mapDir(basePath, (arr) => {
       console.log("mapDir");
       console.log(arr);
@@ -183,6 +185,11 @@ function compute(basePath, outPut, progress, finish){
         console.log(list);
         // console.log(out);
 
+        if(list.length!=total){
+          console.log("图片数量不对，请检查文件夹");
+          return;
+        }
+
         // 合并图片
         compose(list,basePath,outPut);
     
@@ -190,4 +197,4 @@ function compute(basePath, outPut, progress, finish){
 }
 
 
-compute("C:/Users/xw/Desktop/碗/原图/海天H5素材/海天H5素材/盐焗鸡","C:/Users/xw/Desktop/碗/原图/海天H5素材/海天H5素材/盐焗鸡1")
+compute("/Users/lihua/Desktop/盐水鸭","/Users/lihua/Desktop/ya2")
