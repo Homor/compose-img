@@ -197,4 +197,12 @@ function compute(basePath, outPut, progress, finish){
 }
 
 
+// window 文件目录示意
+// compute("C:/Users/xw/Desktop/碗/原图/海天H5素材/海天H5素材/盐焗鸡","C:/Users/xw/Desktop/碗/原图/海天H5素材/海天H5素材/盐焗鸡1")
+
+// 第一个参数为源文件路径，第二个参数为输出文件路径
+// 可参考'源路径示意.jpeg'
+// 控制台执行完毕没有报错，可查看输出目录，随机打开一个文件夹，如“输出成功示意.jpeg”所示，即为成功
+
+// MAC 文件目录
 compute("/Users/lihua/Desktop/盐水鸭","/Users/lihua/Desktop/ya2")
